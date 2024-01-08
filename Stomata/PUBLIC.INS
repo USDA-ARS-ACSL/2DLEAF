@@ -1,0 +1,36 @@
+       use DFLIB
+       use ifqWin
+      parameter (NumNPD=4922, NumElD=4205, NumBPD=1471, 
+     !    NumGD = 3, NumObjD=10, MBandD=78,NumSurfDatD=3+NumGD)
+      integer CObj, CodeG
+      double precision Time,Step,tNext
+      character*30 Message
+      common /grid_public/  NumNP, NumEl, IJ, MBand,
+     !       x(NumNPD), y(NumNPD), KX(NumElD,4), Area(NumElD)
+      common /nodal_public/ NumG,ListN(NumNPD),ListNE(NumNPD),
+     !       g(NumNPD,NumGD), CodeG(NumNPD), LocInd(NumNPD)
+      common /bound_public/ NumBP, KXB(NumBPD), Width(NumBPD),
+     !       VarBG(NumBPD,NumGD,3), FlTrans(NumBPD)
+      common /time_public/ lInput,tNext(0:NumObjD),Tinit,Time,Step,tAtm,
+     !       Iter, dtOpt, dtMin, dMul1, dMul2, dtMx(4), tTDB(4), Tfin
+      common /object_public/ NumObj, CObj(0:NumObjD),IAX
+*Graphics
+      integer window,handle
+      common /graphic_public/ Window(100)
+      character LINE*20
+      INTEGER*2 BLACK,BLUE,INVERSE_BLUE,GREEN,INVERSE_GREEN,
+     +CYAN,INVERSE_CYAN,RED,INVERSE_RED,MAGENTA,INVERSE_MAGENTA,
+     +BROWN,INVERSE_BROWN,YELLOW,INVERSE_YELLOW,WHITE,INVERSE_WHITE,
+     +INTENSE,BLINKING
+      PARAMETER(BLACK=0)
+      PARAMETER(BLUE=1,INVERSE_BLUE=16)
+      PARAMETER(GREEN=2,INVERSE_GREEN=32)
+      PARAMETER(CYAN=3,INVERSE_CYAN=48)
+      PARAMETER(RED=4,INVERSE_RED=64)
+      PARAMETER(MAGENTA=5,INVERSE_MAGENTA=80)
+      PARAMETER(BROWN=6,INVERSE_BROWN=96)
+      PARAMETER(YELLOW=14,INVERSE_YELLOW=8+96)
+      PARAMETER(WHITE=7,INVERSE_WHITE=7*16)
+      PARAMETER(INTENSE=8)
+      PARAMETER(BLINKING=128)
+

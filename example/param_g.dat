@@ -1,0 +1,11 @@
+Parameters of the gas movement                                                  
+Number of gases                                                                 
+3                                                                               
+Numerical parameters                                                            
+epsi                                                                            
+1.0                                                                             
+Gas diffusion coefficients (0.14 cm cm sec-1)                                   
+     DCO_2          DO_2           DH_2O                                        
+     0.1660E-04     0.7572E-04     0.2855E-04
+ 
+   1.000000    

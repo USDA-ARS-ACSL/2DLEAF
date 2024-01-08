@@ -1,0 +1,5 @@
+Data for the HT Setsurf module. Units are: mol, m, s
+Vmax       Tau         Rd         Kc         Ko
+  0.1824E-04  0.2299E+04  0.4559E-06  0.1271E-01  0.6584E+01
+Pml        Alpha       IPPFD
+  0.3956E-05  0.9000E-02  0.2000E-02

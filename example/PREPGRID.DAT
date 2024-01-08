@@ -1,0 +1,29 @@
+Grid information generator data (m,  mol m-3)
+NumGl     NumVl       dx       dy             IAX
+51        41          1E-06    5E-06          1
+NumCl (Number of cells)
+11
+XLU        yLU         xRB        yRB    Boundary
+0E-06    115E-06      30E-06    100E-06   0
+0E-06     95E-06       5E-06     75E-06   -4
+10E-06    95E-06      25E-06     75E-06   -4
+27E-06    90E-06      32E-06     75E-06   -4
+ 3E-06    70E-06      16E-06     50E-06   -4
+19E-06    70E-06      30E-06     50E-06   -4
+33E-06    70E-06      40E-06     50E-06   -4
+ 1E-06    45E-06      10E-06      5E-06   -4
+12E-06    45E-06      20E-06      5E-06   -4
+23E-06    45E-06      30E-06      5E-06   -4
+32E-06    45E-06      39E-06      5E-06   -4
+NumG (Number of gases)
+3
+gInit mol m-3 (Initial conc. of gases in the intracellular space)
+0.032  8.4   1.2972 (This corresponds to pCO2=20 Pa, pO2=21000 Pa and RT=2500
+NumCavRect  number of rectangles to cover the assumed stomatal cavity
+2
+XLUC         yLUC          xRBC          yRBC
+25E-06      100E-06       40E-06        90E-06
+32E-06       90E-06       40E-06        70E-06
+yCav_top and yCav_bottom vertical coordinates of internal border of guard cells
+115E-06   100E-06
+
